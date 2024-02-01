@@ -1,0 +1,747 @@
+* {
+    box-sizing: 0;
+    margin: 0;
+}
+
+.reveal {
+    position: block;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+
+}
+
+.header {
+    background: #FBF7EC;
+    background: url(../image/index.html.png);
+    padding: 20px 95px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav img {
+    width: 40px;
+}
+
+.menu {
+    display: flex;
+
+}
+
+.menu a:hover {
+    border-bottom: 1.3px solid #53285C;
+    padding: 5px 10px;
+
+}
+
+.menu a {
+    color: #53285C;
+    text-decoration: none;
+    padding: 0 10px;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.menu_mob {
+    display: none;
+}
+
+
+
+
+.btn {
+    padding: 0 20px;
+}
+
+.btn a {
+    background: #53285C;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.btn a:hover {
+    border: 1px solid #53285C;
+    background: none;
+    color: #53285C;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+
+
+}
+
+.content .image {
+
+    max-width: 450px;
+
+}
+
+.content .image img {
+    width: 500px;
+}
+
+.content .title {
+    max-width: 540px;
+    padding: 20px 0;
+}
+
+.content .title h1 {
+    font-size: 3em;
+}
+
+.content .title h1 strong {
+
+    color: #FF725E;
+
+
+}
+
+.content .title p {
+    max-width: 330px;
+    font-size: 12px;
+    padding: 10px 0;
+    color: rgb(109, 109, 109);
+
+}
+
+.admin {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    padding: 12px;
+    border-radius: 30px;
+    max-width: 300px;
+}
+
+.content .title .admin i a {
+    text-decoration: none;
+    color: rgb(109, 109, 109);
+    font-size: 20px;
+}
+
+.facult {
+    display: flex;
+    justify-content: center;
+}
+
+.fac {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background: #53285C;
+    border-radius: 10px;
+    padding: 20px;
+    bottom: 70px;
+    max-width: 800px;
+}
+
+.fac .fac-icon {
+    align-items: center;
+    display: flex;
+}
+
+.fac-icon a {
+    margin: 0 10px;
+    background: #77537D;
+    color: #ffffff;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 8px;
+
+}
+
+
+.Competences h3 {
+    font-size: 14px;
+    color: white;
+
+}
+
+.Competences p {
+    font-size: 12px;
+    color: rgb(148, 148, 148);
+
+}
+
+.trace {
+    background: url(../image/Sem\ Título-1.png);
+    text-align: center;
+    padding: 20px 95px;
+}
+
+.tracetitle p {
+    color: rgb(148, 148, 148);
+}
+
+.nos {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    overflow: hidden;
+
+}
+
+.cour {
+    background: white;
+    border: 1px rgba(0, 0, 0, 0.137) solid;
+    padding: 5px;
+    border-radius: 8px;
+    text-align: left;
+    width: 260px;
+    margin: 0 8px;
+}
+
+.cour span {
+    color: #FF725E;
+    font-weight: 600;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.cour p {
+    font-size: 12px;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.137);
+    color: rgb(148, 148, 148);
+}
+
+.cour img {
+    width: 250px;
+}
+
+.cour a {
+    text-decoration: none;
+    color: #FF725E;
+}
+
+
+.cour .bi-person-fill {
+    background: black;
+    color: white;
+    border-radius: 50%;
+    padding: 6px 8px;
+    margin: 5px;
+}
+
+
+.Commentaire {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.commenter {
+    overflow: hidden;
+    background: white;
+    border: 1px rgba(0, 0, 0, 0.137) solid;
+    padding: 5px;
+    border-radius: 8px;
+    text-align: left;
+    width: 260px;
+    margin: 0 8px;
+}
+.Commentaire p {
+    border: none;
+    padding: 10px;
+}
+
+
+
+.experience {
+    display: flex;
+    justify-content: space-around;
+    background: #FBF7EC;
+    background: url(../image/index.html.png);
+    padding: 20px 95px;
+    align-items: center;
+}
+
+.experience img {
+    width: 500px;
+}
+
+.experience strong {
+
+    color: #FF725E;
+}
+
+.experience .fac-icon {
+    display: flex;
+    align-items: center;
+    margin: 12px 0;
+}
+
+.citation {
+    text-align: center;
+    color: white;
+    padding: 50px 95px;
+    background: #53285C;
+
+}
+
+.citation em {
+    font-family: "Vujahday Script", cursive;
+    font-weight: 400;
+    font-size: 30px;
+    font-style: normal;
+
+}
+
+.citation p {
+    font-style: italic;
+    margin: 10px 0;
+}
+
+.principaux {
+    background: url(../image/font.png);
+    text-align: center;
+    padding: 20px 95px;
+    margin: 20px 0;
+}
+
+
+
+.accordion {
+    text-align: left;
+}
+
+
+.rejoins {
+    color: white;
+    text-align: center;
+    padding: 50px 95px;
+    background: linear-gradient(to bottom, #241b004a, #291e00),
+        url('https://prod.cdn-medias.jeuneafrique.com/cdn-cgi/image/q=auto,f=auto,metadata=none,width=1256,height=628,fit=cover/https://prod.cdn-medias.jeuneafrique.com/medias/2023/09/12/jad20230912-tribune-canada-etudiants-africains-1256x628.jpg');
+    margin: 20px 0;
+}
+
+.rejoins_txt {
+    margin: 20px;
+}
+
+.rejoins_txt h3 {
+    font-size: 4em;
+
+}
+
+.rejoins_txt span {
+    font-size: 20px;
+    color: #FB9A00;
+    font-weight: 600;
+}
+
+.btn_pr {
+    margin: 20px 0;
+}
+
+.btn_pr .btn a {
+    background: white;
+    color: #53285C;
+    font-weight: 700;
+
+}
+
+.btn_pr .btn a:hover {
+    border: 1px solid white;
+    background: none;
+    color: white;
+
+}
+
+.btn_pr .btn .spe {
+    border: 1px solid white;
+    background: none;
+    color: white;
+}
+
+.btn_pr .btn .spe:hover {
+    background: white;
+    color: #53285C;
+    font-weight: 700;
+}
+
+.container {
+    margin: 40px 0;
+}
+
+
+.counter {
+    color: #53285C;
+    background: linear-gradient(to right bottom, #fff 50%, #f9f9f9 51%);
+    text-align: center;
+    width: 200px;
+    padding: 20px 0 0;
+    margin: 0 auto;
+    border-radius: 50px 0;
+    box-shadow: 0 0 15px -5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.counter .counter-icon {
+    font-size: 45px;
+    margin: 0 0 10px;
+}
+
+.counter h3 {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 0 0 20px;
+}
+
+.counter .counter-value {
+    color: #fff;
+    background: linear-gradient(to right bottom, #77537D, #53285C);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    padding: 7px 0 3px;
+    display: block;
+}
+
+.counter.blue {
+    color: #FB9A00;
+}
+
+.counter.blue .counter-value {
+    background: linear-gradient(to right bottom, #FF725E, #FF725E);
+}
+
+.counter.orange {
+    color: #FB9A00;
+}
+
+.counter.orange .counter-value {
+    background: linear-gradient(to right bottom, #FCCA09, #FB9A00);
+}
+
+.counter.green {
+    color: #03BFB0;
+}
+
+.counter.green .counter-value {
+    background: linear-gradient(to right bottom, #00E2CD, #03BFB0);
+}
+
+.news {
+    margin: 20px 95px;
+    padding: 50px 95px;
+    text-align: center;
+    background: #53285C;
+    background-image: url(../image/font.png);
+    border-radius: 10px;
+}
+
+.news h3 {
+    color: white;
+}
+
+.news p {
+    color: rgb(203, 203, 203);
+}
+
+.newamin {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    background: #FBF7EC;
+    background-image: url(../image/font.png);
+    padding: 20px 95px;
+}
+
+.footer_menu {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer_menu img {
+    width: 60px;
+}
+
+.logo {
+    width: 30%;
+}
+
+.logo p {
+    font-size: 12px;
+    color: rgb(138, 138, 138);
+    padding: 10px 0;
+
+}
+
+footer .assets {
+    width: 17, 4%;
+}
+
+footer .assets a {
+    text-decoration: none;
+    color: #53285C;
+}
+
+.copy {
+    padding: 10px 0;
+    border-top: #53285C 1px solid;
+    text-align: center;
+}
+
+.copy a {
+    text-decoration: none;
+    color: #53285C;
+}
+
+@media (max-width:480px) {
+    .menu_ittems {
+        display: none;
+
+    }
+
+    .menu_mob {
+        display: block;
+    }
+
+    .menu .btn a{
+        display: none;
+    }
+
+    .menu_mob button {
+        font-size: 3em;
+        font-weight: 900;
+        color: #53285C;
+    }
+
+    .offcanvas-body .menu_offcavas a {
+        font-size: 3.4em;
+        padding: 20px;
+
+    }
+
+    .offcanvas{
+        
+    }
+
+    .offcanvas .btn a{
+        display: block;
+    }
+
+    .offcanvas .btn{
+        padding: 20px 0;
+    }
+
+    .offcanvas{
+        padding: 10px 0;
+    }
+
+
+
+    .header {
+        background: #FBF7EC;
+        background: url(../image/index.html.png);
+        padding: 10px 10px;
+
+    }
+
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+
+
+    }
+
+    .content .image {
+        display: none;
+        max-width: 100%;
+
+    }
+
+    .content .image img {
+        width: 470px;
+    }
+
+    .content .title {
+        max-width: 100%;
+        padding: 20px 0;
+    }
+
+    .fac {
+        display: flex;
+        justify-content: center;
+        position: none;
+        background: #53285C;
+        border-radius: none;
+        padding: 20px;
+        bottom: 10px;
+        max-width: 100%;
+    }
+
+    .fac .fac-icon {
+        align-items: center;
+        width: 33.333%;
+        padding: 0 10px;
+        display: block;
+    }
+
+    .fac-icon a {
+        margin: 10px 0px;
+        background: #77537D;
+        color: #ffffff;
+        padding: 15px;
+        font-size: 16px;
+        border-radius: 8px;
+
+    }
+
+    .fac-icon p{
+        display: none;
+    }
+
+
+    .Competences h3 {
+        padding: 20px 0;
+        font-size: 12px 0 0 0;
+        color: white;
+
+    }
+
+
+    .trace {
+        background: url(../image/Sem\ Título-1.png);
+        text-align: center;
+        padding: 10px 10px;
+    }
+
+
+    .experience {
+        display: flex;
+        flex-direction: column;
+        background: #FBF7EC;
+        background: url(../image/index.html.png);
+        padding: 10px 10px;
+        align-items: center;
+    }
+
+    .Commentaire {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+        overflow: hidden;
+    }
+
+    .commenter {
+        background: white;
+        border: 1px rgba(0, 0, 0, 0.137) solid;
+        padding: 5px;
+        border-radius: 8px;
+        text-align: left;
+        width: 100%;
+        margin: 0 8px;
+    }
+
+    .experience {
+        display: flex;
+        justify-content: space-around;
+        background: #FBF7EC;
+        background: url(../image/index.html.png);
+        padding: 10px 10px;
+        align-items: center;
+    }
+
+    .experience img {
+        width: 100%;
+    }
+
+    .citation {
+        text-align: center;
+        color: white;
+        padding: 30px 10px;
+        background: #53285C;
+
+    }
+
+    .principaux {
+        background: url(../image/font.png);
+        text-align: center;
+        padding: 10px 10px;
+        margin: 20px 0;
+    }
+
+
+    .rejoins {
+        color: white;
+        text-align: left;
+        padding: 10px 10px;
+        background: linear-gradient(to bottom, #241b004a, #291e00),
+            url('https://prod.cdn-medias.jeuneafrique.com/cdn-cgi/image/q=auto,f=auto,metadata=none,width=1256,height=628,fit=cover/https://prod.cdn-medias.jeuneafrique.com/medias/2023/09/12/jad20230912-tribune-canada-etudiants-africains-1256x628.jpg');
+        margin: 20px 0;
+    }
+
+    .rejoins_txt h3 {
+        font-size: 2em;
+
+    }
+
+    .prin_btn {
+        display: flex;
+        margin: 20px 0;
+    }
+
+
+    .btn_pr .btn a {
+        padding: 12px;
+        background: white;
+        color: #53285C;
+        font-weight: 700;
+        font-size: 12px;
+
+    }
+
+
+
+
+    .news {
+        margin: 20px 10px;
+        padding: 50px 10px;
+        text-align: center;
+        background: #53285C;
+        background-image: url(../image/font.png);
+        border-radius: 10px;
+    }
+
+
+    footer {
+        background: #FBF7EC;
+        background-image: url(../image/font.png);
+        padding: 10px 10px;
+    }
+
+    .footer_menu {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .logo {
+        width: 100%;
+    }
+}
