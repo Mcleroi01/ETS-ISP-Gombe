@@ -184,6 +184,7 @@
     background: url(../image/Sem\ Título-1.png);
     text-align: center;
     padding: 20px 95px;
+    
 }
 
 .tracetitle p {
@@ -191,6 +192,13 @@
 }
 
 .nos {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.owl-carousel {
     display: flex;
     justify-content: center;
     margin: 20px 0;
@@ -205,7 +213,7 @@
     border-radius: 8px;
     text-align: left;
     width: 260px;
-    margin: 0 8px;
+
 }
 
 .cour span {
@@ -247,19 +255,97 @@
     margin: 20px 0;
 }
 
-.commenter {
-    overflow: hidden;
-    background: white;
-    border: 1px rgba(0, 0, 0, 0.137) solid;
-    padding: 5px;
-    border-radius: 8px;
-    text-align: left;
-    width: 260px;
-    margin: 0 8px;
+.containe {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: url(../image/font.png);
 }
-.Commentaire p {
-    border: none;
-    padding: 10px;
+
+.testimonial {
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+.testimonial .image {
+    height: 170px;
+    width: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.testimonial .slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 30px;
+    height: 100%;
+    width: 100%;
+}
+
+.slide p {
+    text-align: center;
+    padding: 0 160px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+}
+
+.slide .quote-icon {
+    font-size: 30px;
+    color: #4070f4;
+}
+
+.slide .details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.details .name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.details .job {
+    font-size: 12px;
+    font-weight: 400;
+    color: #333;
+}
+
+/* swiper button css */
+.nav-btn {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    transform: translateY(30px);
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
+}
+
+.nav-btn:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.nav-btn::after,
+.nav-btn::before {
+    font-size: 20px;
+    color: #fff;
+}
+
+.swiper-pagination-bullet {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #4070f4;
 }
 
 
@@ -491,7 +577,7 @@ footer {
 
 footer .assets {
     width: 17, 4%;
-   
+
 }
 
 footer .assets a {
@@ -499,16 +585,16 @@ footer .assets a {
     color: #53285C;
 }
 
-.assets .legacy{
+.assets .legacy {
     padding: 10px 0;
 }
 
-.assets .legacy a{
+.assets .legacy a {
     font-size: 14px;
     color: rgb(148, 148, 148);
 }
 
-.assets .legacy a:hover{
+.assets .legacy a:hover {
     font-size: 15px;
     color: rgb(104, 104, 104);
 }
@@ -534,7 +620,7 @@ footer .assets a {
         display: block;
     }
 
-    .menu .btn a{
+    .menu .btn a {
         display: none;
     }
 
@@ -550,19 +636,17 @@ footer .assets a {
 
     }
 
-    .offcanvas{
-        
-    }
+    .offcanvas {}
 
-    .offcanvas .btn a{
+    .offcanvas .btn a {
         display: block;
     }
 
-    .offcanvas .btn{
+    .offcanvas .btn {
         padding: 20px 0;
     }
 
-    .offcanvas{
+    .offcanvas {
         padding: 10px 0;
     }
 
@@ -626,9 +710,10 @@ footer .assets a {
 
     }
 
-    .fac-icon p{
-        display: none;
+    .fac-icon p {
+        display: block;
     }
+
 
 
     .Competences h3 {
@@ -653,6 +738,22 @@ footer .assets a {
         background: url(../image/index.html.png);
         padding: 10px 10px;
         align-items: center;
+    }
+
+    .owl-carousel {
+        display: flex;
+        justify-content: none;
+        margin: 0px 0;
+        overflow: hidden;
+
+    }
+
+    .nos {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+        overflow: hidden;
+
     }
 
     .Commentaire {
@@ -757,5 +858,15 @@ footer .assets a {
 
     .logo {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .slide p {
+        padding: 0 20px;
+    }
+
+    .nav-btn {
+        display: none;
     }
 }
