@@ -191,6 +191,11 @@
     color: rgb(148, 148, 148);
 }
 
+.tracetitle h3 {
+    color: #FF725E;
+    font-size: 3em;
+}
+
 .nos {
     display: flex;
     justify-content: center;
@@ -257,7 +262,7 @@
 }
 
 .containe {
-    height: 100vh;
+    
     width: 100%;
     display: flex;
     align-items: center;
@@ -687,25 +692,25 @@ footer .assets a {
     .fac {
         display: flex;
         justify-content: center;
-        position: none;
+        position: relative;
         background: #53285C;
-        border-radius: none;
-        padding: 2px;
+        border-radius: 0;
+        padding: 15px 10px;
         bottom: 0px;
         max-width: 100%;
     }
 
     .fac .fac-icon {
+        display: flex;
         align-items: center;
         width: 33.333%;
-        padding: 0 10px;
-        display: block;
+        padding: 0 0px;
     }
 
     .fac-icon a {
         background: #77537D;
         color: #ffffff;
-        padding: 10px;
+        padding: 7px;
         font-size: 16px;
         border-radius: 8px;
 
@@ -718,19 +723,31 @@ footer .assets a {
 
 
     .Competences h3 {
-        padding: 20px 0;
-        font-size: 12px 0 0 0;
+        padding: 10px;
+        font-size: 12px;
         color: white;
+        margin: 0;
 
+    }
+
+    .fac .fac-icon .Competences p{
+        display: none;
+    }
+
+    .fac-icon a {
+        margin: 0;
     }
 
 
     .trace {
         background: url(../image/Sem\ Título-1.png);
-        text-align: center;
+        text-align: left;
         padding: 10px 10px;
     }
-
+    .tracetitle{
+        text-align: left;
+        margin: 20px 0;
+    }
 
     .experience {
         display: flex;
@@ -751,7 +768,7 @@ footer .assets a {
 
     .nos {
         display: flex;
-        justify-content: center;
+        justify-content: left;
         margin: 20px 0;
         overflow: hidden;
 
@@ -779,12 +796,20 @@ footer .assets a {
         justify-content: space-around;
         background: #FBF7EC;
         background: url(../image/index.html.png);
-        padding: 10px 10px;
-        align-items: center;
+        padding: 10px;
+        align-items: flex-start;
     }
 
     .experience img {
         width: 100%;
+    }
+
+    .experience .txt_exp{
+        width: 100%;
+    }
+
+    .txt_exp .Competences{
+        margin: 0 10px;
     }
 
     .citation {
@@ -822,6 +847,18 @@ footer .assets a {
         margin: 20px 0;
     }
 
+    .counter {
+        color: #53285C;
+        background: linear-gradient(to right bottom, #fff 50%, #f9f9f9 51%);
+        text-align: center;
+        width: 100%;
+        padding: 20px 0 0;
+        margin: 10px auto;
+        border-radius: 50px 0;
+        box-shadow: 0 0 15px -5px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+    }
+
 
     .btn_pr .btn a {
         padding: 12px;
@@ -838,7 +875,7 @@ footer .assets a {
     .news {
         margin: 20px 10px;
         padding: 50px 10px;
-        text-align: center;
+        text-align: left;
         background: #53285C;
         background-image: url(../image/font.png);
         border-radius: 10px;
