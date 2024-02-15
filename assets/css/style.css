@@ -28,6 +28,10 @@
     align-items: center;
 }
 
+.nav span {
+    font-weight: 900;
+}
+
 .nav img {
     width: 40px;
 }
@@ -59,7 +63,7 @@
 
 
 .btn {
-    padding: 0 20px;
+    padding: 0 0px;
 }
 
 .btn a {
@@ -67,7 +71,8 @@
     color: white;
     text-decoration: none;
     padding: 10px;
-    border-radius: 20px;
+    font-weight: 600;
+    border-radius: 5px;
 }
 
 .btn a:hover {
@@ -180,11 +185,75 @@
 
 }
 
+.bienvenue {
+    display: flex;
+    background: url(../image/font.png);
+    padding: 20px 95px;
+}
+
+.logo_isp {
+    padding: 50px 0;
+    margin: 0 20px;
+}
+
+.logo_isp img {
+    width: 500px;
+    padding: 10px 0;
+    object-fit: cover;
+}
+
+.bienvenue .txt {
+    margin: 0 20px;
+}
+
+.bienvenue .txt span {
+    color: #4f2658;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.bienvenue .txt h2 {
+    font-size: 3em;
+}
+
+.bienvenue .txt p {
+    font-size: 12px;
+    padding: 10px 0;
+    color: rgb(109, 109, 109);
+
+}
+
+.group_btn {
+    display: flex;
+}
+
+.btn3 {
+    padding: 0 10px;
+}
+
+.btn3 a {
+    background: #FF725E;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.btn3 a:hover {
+    border: 1px solid #FF725E;
+    background: none;
+    color: #FF725E;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 20px;
+}
+
 .trace {
     background: url(../image/Sem\ Título-1.png);
     text-align: center;
     padding: 20px 95px;
-    
+
 }
 
 .tracetitle p {
@@ -208,7 +277,7 @@
     justify-content: center;
     margin: 0;
     align-items: center;
-    
+
 
 }
 
@@ -262,7 +331,7 @@
 }
 
 .containe {
-    
+
     width: 100%;
     display: flex;
     align-items: center;
@@ -470,7 +539,7 @@
 }
 
 .container {
-    margin: 40px 0;
+    margin: 0px 0;
 }
 
 
@@ -555,66 +624,199 @@
 }
 
 footer {
-    background: #FBF7EC;
     background-image: url(../image/font.png);
+
+}
+
+footer p {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(203, 203, 203);
+
+}
+
+footer .btn {
+    background: #FF725E;
+    border: none;
+    color: white;
+}
+
+
+/*  */
+
+.titl {
+
+    padding: 0px 0;
+}
+
+.conten {
+    text-align: center;
+    margin: 50px 0;
+
+
+}
+
+
+.titl h1 {
+    font-size: 3em;
+}
+
+.titl h1 strong {
+
+    color: #FF725E;
+
+
+}
+
+.titl p {
+    max-width: 330px;
+    font-size: 12px;
+    padding: 10px 0;
+    color: rgb(109, 109, 109);
+
+}
+
+.maps {
+    overflow: hidden;
+    filter: blur(2px);
+    transition: all 0.3s ease-in-out;
+}
+
+.maps:hover {
+    filter: blur(0px);
+}
+
+.bg-light .btn {
+    background: #53285C;
+    border: none;
+    border-radius: 20px;
+}
+
+/*  */
+
+.admission {
     padding: 20px 95px;
+    background-image: url(https://argotsoul.com/wp-content/uploads/2021/08/HBCU-Scholars-scaled.jpeg);
+    backdrop-filter: blur(10px);
 }
 
-.footer_menu {
+/* * */
+
+
+.consigne {
+
+    background: #53285C;
+    color: white;
+}
+
+.cons_title {
+    padding: 20px 50px;
+}
+
+.consigne .cons {
     display: flex;
+    justify-content: space-around;
+
+}
+
+.cons_ittem {
+    display: flex;
+    padding: 50px;
+    width: 100%;
+    border-right: #53285C solid 2px;
+    background: #4f2658;
+    align-items: center;
+}
+
+.cons_ittem .sepa {
+    padding: 10px;
+    margin: 0 10px;
+    border-right: rgba(255, 255, 255, 0.265) solid 2px;
+}
+
+.cons_ittem .sepa h4 {
+    font-size: 50px;
+}
+
+.info_adm {
+    display: flex;
+    padding: 20px 95px;
     justify-content: space-between;
-
 }
 
-.footer_menu img {
-    width: 60px;
+.info_adm .btn {
+    padding: 20px 0;
 }
 
-.logo {
+.info_adm h3,
+h4 {
+    color: #FF725E;
+    padding: 10px 0;
+}
+
+.info_detail {
+    width: 70%;
+    margin: 0 20px;
+}
+
+.av {
     width: 30%;
 }
 
-.logo p {
-    font-size: 12px;
-    color: rgb(138, 138, 138);
-    padding: 10px 0;
+.avis {
 
+    background: #ebebeb;
+    margin: 20px 0;
+    padding: 20px;
 }
 
-footer .assets {
-    width: 17, 4%;
-
+.avis .bar {
+    border-left: #FF725E solid 2px;
+    padding: 0px 20px;
+    align-items: center;
 }
 
-footer .assets a {
-    text-decoration: none;
-    color: #53285C;
+.avis h3 {
+    font-size: 18px;
+    color: black;
 }
 
-.assets .legacy {
-    padding: 10px 0;
-}
-
-.assets .legacy a {
+.avis p {
     font-size: 14px;
-    color: rgb(148, 148, 148);
 }
 
-.assets .legacy a:hover {
-    font-size: 15px;
-    color: rgb(104, 104, 104);
+.registraire {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 95px;
 }
 
-.copy {
-    padding: 10px 0;
-    border-top: #53285C 1px solid;
-    text-align: center;
+.regi {
+    width: 100%;
+    background: url(../image/font.png);
+    padding: 20px;
+    align-items: center;
+    margin: 0 10px;
+    height: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.copy a {
-    text-decoration: none;
-    color: #53285C;
+.item {
+    color: white;
+
+    padding: 50px;
 }
+
+.item h1 {
+    font-size: 72px;
+    padding: 30px;
+}
+
+.item h1 strong {
+    color: #FF725E;
+}
+
 
 @media (max-width:480px) {
     .menu_ittems {
@@ -730,7 +932,7 @@ footer .assets a {
 
     }
 
-    .fac .fac-icon .Competences p{
+    .fac .fac-icon .Competences p {
         display: none;
     }
 
@@ -738,13 +940,20 @@ footer .assets a {
         margin: 0;
     }
 
+    .bienvenue {
+        display: flex;
+        flex-direction: column;
+        background: url(../image/font.png);
+        padding: 10px 10px;
+    }
 
     .trace {
         background: url(../image/Sem\ Título-1.png);
         text-align: left;
         padding: 10px 10px;
     }
-    .tracetitle{
+
+    .tracetitle {
         text-align: left;
         margin: 20px 0;
     }
@@ -762,7 +971,7 @@ footer .assets a {
         display: flex;
         justify-content: center;
         margin: 0px 0;
-       
+
 
     }
 
@@ -804,11 +1013,11 @@ footer .assets a {
         width: 100%;
     }
 
-    .experience .txt_exp{
+    .experience .txt_exp {
         width: 100%;
     }
 
-    .txt_exp .Competences{
+    .txt_exp .Competences {
         margin: 0 10px;
     }
 
@@ -880,23 +1089,114 @@ footer .assets a {
         background-image: url(../image/font.png);
         border-radius: 10px;
     }
+/* admison */
+    .consigne {
 
-
-    footer {
-        background: #FBF7EC;
-        background-image: url(../image/font.png);
+        background: #53285C;
+        color: white;
+    }
+    
+    .cons_title {
         padding: 10px 10px;
     }
-
-    .footer_menu {
+    
+    .consigne .cons {
         display: flex;
-        flex-wrap: wrap;
-
+       
+    
     }
-
-    .logo {
+    
+    .cons_ittem {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+        border-right: #53285C solid 2px;
+        background: #4f2658;
+        align-items: center;
+    }
+    
+    .cons_ittem .sepa {
+        padding: 10px;
+        margin: 0 0px;
+        border-right: none;
+        border-bottom: rgba(255, 255, 255, 0.265) solid 2px;
+    }
+    
+    .cons_ittem .sepa h4 {
+        font-size: 30px;
+    }
+    
+    .info_adm {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 10px;
+        justify-content: space-between;
+    }
+    
+    .info_adm .btn {
+        padding: 20px 0;
+    }
+    
+    .info_adm h3,
+    h4 {
+        color: #FF725E;
+        padding: 10px 0;
+    }
+    
+    .info_detail {
+        width: 100%;
+        margin: 0 20px;
+    }
+    
+    .av {
         width: 100%;
     }
+    
+    .avis {
+    
+        background: #ebebeb;
+        margin: 20px 0;
+        padding: 20px;
+    }
+    
+    .avis .bar {
+        border-left: #FF725E solid 2px;
+        padding: 0px 20px;
+        align-items: center;
+    }
+    
+    .avis h3 {
+        font-size: 18px;
+        color: black;
+    }
+    
+    .avis p {
+        font-size: 14px;
+    }
+    
+    .registraire {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 10px;
+    }
+    
+    .regi {
+        width: 100%;
+        background: url(../image/font.png);
+        padding: 20px;
+        align-items: center;
+        margin: 10px 0px;
+        height: 200px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+
+
+
 }
 
 @media screen and (max-width: 768px) {
