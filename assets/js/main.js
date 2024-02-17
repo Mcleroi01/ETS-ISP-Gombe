@@ -39,12 +39,22 @@ var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     grabCursor: true,
     loop: true,
-    
-    
+
+
     autoplay: {
         delay: 5000,
-      },
-  });
+    },
+});
 
 
-  
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+    document.getElementById("loader").style.display = "none";
+}
+
+

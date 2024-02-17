@@ -3,6 +3,85 @@
     margin: 0;
 }
 
+#loader {
+    position: fixed;
+    transition: all 0.8s ease-in-out;
+    z-index: 1;
+    background: #ffffff;
+    width: 100%;
+    height: 100%;
+
+}
+
+.navsk {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 95px;
+}
+
+.menusk {
+    display: flex;
+}
+
+.mz1 {
+    border-radius: 5px;
+    width: 100%;
+}
+
+
+
+.mzA {
+    display: flex;
+    height: 30px;
+    padding: 0 20px;
+    margin: 0 10px;
+}
+
+.mzB {
+    height: 30px;
+    width: 100px;
+    margin: 0 10px;
+    margin-top: 5px;
+}
+
+.mzC {
+    height: 100%;
+
+
+}
+
+.mzD {
+    height: 15px;
+    margin-top: 10px;
+}
+
+@keyframes fullView {
+    100% {
+        width: 100%;
+    }
+}
+
+
+.mshimmer {
+    animation: shimmer 2s infinite linear;
+    background: linear-gradient(to right, #f0f0f0 5%, #D6D6D6 35%, #f0f0f0 50%);
+    background-size: 1000px 100%;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+
+
+
+
 .reveal {
     position: block;
     transform: translateY(150px);
@@ -20,6 +99,7 @@
     background: #FBF7EC;
     background: url(../image/index.html.png);
     padding: 20px 95px;
+    transition: all 0.50s ease-in-out;
 }
 
 .nav {
@@ -192,6 +272,7 @@
 }
 
 .logo_isp {
+    width: 100%;
     padding: 50px 0;
     margin: 0 20px;
 }
@@ -693,11 +774,68 @@ footer .btn {
 }
 
 /*  */
+.nav-link {
+    display: block;
+    padding: 5px 10px;
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    color: #53285C;
+    text-decoration: none;
+    background: 0 0;
+    border: 0;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
 
-.admission {
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: var(--bs-nav-pills-link-active-color);
+    background-color: #53285C;
+}
+
+.abouthead {
     padding: 20px 95px;
-    background-image: url(https://argotsoul.com/wp-content/uploads/2021/08/HBCU-Scholars-scaled.jpeg);
-    backdrop-filter: blur(10px);
+    background-image: linear-gradient(to right bottom, #ffffffc7 50%, #f9f9f9a4 51%), url(https://argotsoul.com/wp-content/uploads/2021/08/HBCU-Scholars-scaled.jpeg);
+    backdrop-filter: blur(px);
+}
+
+.abouthead h1 strong {
+    color: #FF725E;
+}
+
+.abouthead p {
+    width: 500px;
+    font-size: 12px;
+    padding: 10px 0;
+    /* color: rgb(109, 109, 109); */
+}
+
+.walpperabout {
+    display: flex;
+    overflow: hidden;
+
+
+}
+
+.image_pzz img {
+    width: 550px;
+    object-fit: cover;
+    height: 161px;
+    filter: blur(px);
+}
+
+.noreuni {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 95px;
+}
+
+.notrehistoire {
+    padding: 20px;
+    width: 90%;
+}
+
+.image_illu img {
+    width: 100%;
 }
 
 /* * */
@@ -819,6 +957,11 @@ h4 {
 
 
 @media (max-width:480px) {
+    .navsk {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 10px;
+    }
     .menu_ittems {
         display: none;
 
@@ -944,12 +1087,18 @@ h4 {
         display: flex;
         flex-direction: column;
         background: url(../image/font.png);
-        padding: 30px 10px;
+        padding: 30px 0px;
     }
 
     .logo_isp {
         padding: 0px 0;
-        margin: 0 20px;
+        margin: 0 10px;
+    }
+
+    .logo_isp img {
+        width: 90%;
+        padding: 10px 0;
+        object-fit: cover;
     }
 
     .trace {
@@ -1094,23 +1243,24 @@ h4 {
         background-image: url(../image/font.png);
         border-radius: 10px;
     }
-/* admison */
+
+    /* admison */
     .consigne {
 
         background: #53285C;
         color: white;
     }
-    
+
     .cons_title {
         padding: 10px 10px;
     }
-    
+
     .consigne .cons {
         display: flex;
-       
-    
+
+
     }
-    
+
     .cons_ittem {
         display: flex;
         flex-direction: column;
@@ -1121,66 +1271,66 @@ h4 {
         background: #4f2658;
         align-items: center;
     }
-    
+
     .cons_ittem .sepa {
         padding: 10px;
         margin: 0 0px;
         border-right: none;
         border-bottom: rgba(255, 255, 255, 0.265) solid 2px;
     }
-    
+
     .cons_ittem .sepa h4 {
         font-size: 30px;
     }
-    
+
     .info_adm {
         display: flex;
         flex-direction: column;
         padding: 10px 10px;
         justify-content: space-between;
     }
-    
+
     .info_adm .btn {
         padding: 20px 0;
     }
-    
+
     .info_adm h3,
     h4 {
         color: #FF725E;
         padding: 10px 0;
     }
-    
+
     .info_detail {
         width: 100%;
         margin: 0 20px;
     }
-    
+
     .av {
         width: 100%;
     }
-    
+
     .avis {
-    
+
         background: #ebebeb;
         margin: 20px 0;
         padding: 20px;
     }
-    
+
     .avis .bar {
         border-left: #FF725E solid 2px;
         padding: 0px 20px;
         align-items: center;
     }
-    
+
     .avis h3 {
         font-size: 18px;
         color: black;
     }
-    
+
     .avis p {
         font-size: 14px;
     }
-    
+
     .registraire {
         display: flex;
         flex-direction: column;
@@ -1188,7 +1338,7 @@ h4 {
         justify-content: center;
         padding: 10px 10px;
     }
-    
+
     .regi {
         width: 100%;
         background: url(../image/font.png);
@@ -1198,8 +1348,29 @@ h4 {
         height: 200px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
-    
 
+    .noreuni{
+        flex-direction: column;
+        padding: 10px 10px;
+    }
+
+    .abouthead {
+        padding: 10px 10px;
+        background-image: linear-gradient(to right bottom, #ffffffc7 50%, #f9f9f9a4 51%), url(https://argotsoul.com/wp-content/uploads/2021/08/HBCU-Scholars-scaled.jpeg);
+        backdrop-filter: blur(px);
+    }
+
+    .abouthead p {
+        width: 100%;
+        font-size: 12px;
+        padding: 10px 0;
+        /* color: rgb(109, 109, 109); */
+    }
+
+    .notrehistoire {
+        padding: 0px;
+        width: 100%;
+    }
 
 
 }
