@@ -1,3 +1,23 @@
+window.onscroll = function () {
+    scroll()
+
+}
+
+
+let nav = document.getElementById('navbar')
+let stick = nav.offsetTop
+
+
+function scroll() {
+    if (window.pageYOffset >= stick) {
+        nav.classList.add('stick')
+    }
+    else {
+        nav.classList.remove('stick')
+    }
+}
+
+
 function change(x) {
     x.classList.toggle("change")
     document.querySelector('.menu').classList.toggle('menu-mobile');

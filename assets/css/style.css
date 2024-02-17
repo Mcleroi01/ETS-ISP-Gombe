@@ -3,6 +3,8 @@
     margin: 0;
 }
 
+
+
 #loader {
     position: fixed;
     transition: all 0.8s ease-in-out;
@@ -79,6 +81,19 @@
 }
 
 
+.stick {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: url(../image/font.png);
+    background: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.144);
+   
+}
+
+.stick .menu{
+    position: relative;
+}
 
 
 
@@ -98,14 +113,16 @@
 .header {
     background: #FBF7EC;
     background: url(../image/index.html.png);
-    padding: 20px 95px;
+   
     transition: all 0.50s ease-in-out;
 }
 
 .nav {
+    padding: 20px 95px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .nav span {
@@ -167,6 +184,7 @@
 .content {
     display: flex;
     justify-content: space-around;
+    padding: 0px 95px;
     margin: 50px 0;
 
 
@@ -962,10 +980,25 @@ h4 {
         justify-content: space-between;
         padding: 10px 10px;
     }
+
+    .mzC {
+        margin: 0 10px;
+        height: 100px;
+    
+    
+    }
+    
+    .mzD {
+        height: 20px;
+        margin: 0 10px;
+        margin-top: 10px;
+    }
     .menu_ittems {
         display: none;
 
     }
+
+
 
     .menu_mob {
         display: block;
