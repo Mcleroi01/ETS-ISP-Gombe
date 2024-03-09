@@ -117,7 +117,7 @@
     transition: all 0.50s ease-in-out;
 }
 
-.nav {
+.navs {
     padding: 20px 95px;
     display: flex;
     justify-content: space-between;
@@ -125,11 +125,11 @@
     width: 100%;
 }
 
-.nav span {
+.navs span {
     font-weight: 900;
 }
 
-.nav img {
+.navs img {
     width: 40px;
 }
 
@@ -160,7 +160,7 @@
 
 
 .btn {
-    padding: 0 0px;
+   
 }
 
 .btn a {
@@ -282,20 +282,54 @@
 }
 
 .bienvenue {
+
+    background-image: url(../image/ul-rouge-ul.gif);
+    background-position-x: calc(640px - 50vw);
+    background-position-y: 100px;
+    background-repeat: no-repeat;
+    background-size: 100% 325px;
+    padding: 20px 50px;
+}
+
+.autorite {
     display: flex;
-    background: url(../image/font.png);
-    padding: 20px 95px;
+    align-items: center;
+
 }
 
 .logo_isp {
     width: 100%;
     padding: 50px 0;
-    margin: 0 20px;
+}
+
+.autoritetxt {
+    background: #23242a;
+    background-image: url(../image/font.png);
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.027);
+    width: 100%;
+    padding: 20px 10px;
+    height: 400px;
+    color: rgb(255, 255, 255);
+}
+
+.autoritetxt span i {
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.autoritetxt h3 {
+    padding: 20px 0;
+}
+
+.autoritetxt p {
+    color: rgb(226, 224, 224);
+    font-size: 15px;
 }
 
 .logo_isp img {
-    width: 500px;
-    padding: 10px 0;
+    width: 300px;
+    height: 400px;
     object-fit: cover;
 }
 
@@ -318,32 +352,6 @@
     padding: 10px 0;
     color: rgb(109, 109, 109);
 
-}
-
-.group_btn {
-    display: flex;
-}
-
-.btn3 {
-    padding: 0 10px;
-}
-
-.btn3 a {
-    background: #FF725E;
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    font-weight: 600;
-    border-radius: 5px;
-}
-
-.btn3 a:hover {
-    border: 1px solid #FF725E;
-    background: none;
-    color: #FF725E;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 20px;
 }
 
 .trace {
@@ -971,6 +979,117 @@ h4 {
     color: #FF725E;
 }
 
+.owl-slider {
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.owl-slider .owl-stage {
+    display: flex;
+}
+
+.owl-slider .slide img {
+    width: 100%;
+}
+
+.owl-slider .disabled {
+    display: none;
+}
+
+
+.slide {
+    display: flex;
+    justify-content: center;
+}
+
+.owl-text {
+    height: 400px;
+    width: 800px;
+    padding: 20px;
+    display: flex;
+    background: rgba(0, 0, 0, 0.822);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.owl-text h1 {
+    color: #ffffff;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.pstbtn {
+    text-align: center;
+}
+
+.btn1 {
+    background-color: transparent;
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    font-size: 30px;
+    padding: 4px 48px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    color: #ffffff;
+    transition: all ease-in-out 0.30s;
+}
+
+.btn1:hover {
+    color: #000000;
+    background: rgba(0, 0, 0, 0.066);
+
+}
+.btn1:hover {
+    color: #000000;
+    background: rgba(0, 0, 0, 0.066);
+
+}
+
+.btnpri {
+    background-color: transparent;
+    border: 1px solid #000000;
+    font-size: 30px;
+    text-decoration: none;
+    padding: 4px 48px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    color: #000000;
+    transition: all ease-in-out 0.30s;
+}
+
+.btnpri:hover {
+    color: #000000;
+    background: rgba(0, 0, 0, 0.066);
+
+}
+
+.owl-dots {
+    text-align: center;
+    position: absolute;
+    bottom: 25px;
+    width: 100%;
+    left: 2px;
+}
+
+.owl-dots .owl-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin: 0 6px;
+    padding: 0;
+    cursor: pointer;
+    border-color: transparent;
+    background-color: #fff;
+}
+
+.owl-dots .owl-dot.active {
+    background-color: #69728c;
+    outline: 0;
+}
+
 
 @media (max-width:480px) {
     .navsk {
@@ -1018,7 +1137,7 @@ h4 {
 
     }
 
-    .nav {
+    .navs {
         padding: 10px 10px;
         display: flex;
         justify-content: space-between;
@@ -1122,23 +1241,78 @@ h4 {
     }
 
     .bienvenue {
+
+        background-image: url(../image/ul-rouge-ul.gif);
+        background-position-x: calc(640px - 50vw);
+        background-position-y: 100px;
+        background-repeat: no-repeat;
+        background-size: 100% 325px;
+        padding: 20px 0px;
+    }
+    
+    .autorite {
         display: flex;
         flex-direction: column;
-        background: url(../image/font.png);
-        padding: 30px 0px;
+        align-items: center;
+    
     }
-
+    
     .logo_isp {
+        width: 100%;
         padding: 0px 0;
-        margin: 0 10px;
     }
-
+    
+    .autoritetxt {
+        background: #23242a;
+        background-image: url(../image/font.png);
+        box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.027);
+        width: 100%;
+        padding: 20px 10px;
+        height: 400px;
+        color: rgb(255, 255, 255);
+    }
+    
+    .autoritetxt span i {
+        color: #ffffff;
+        font-weight: 900;
+        font-size: 30px;
+    }
+    
+    .autoritetxt h3 {
+        padding: 20px 0;
+    }
+    
+    .autoritetxt p {
+        color: rgb(226, 224, 224);
+        font-size: 15px;
+    }
+    
     .logo_isp img {
-        width: 90%;
-        padding: 10px 0;
+        width: 100%;
+        height: 400px;
         object-fit: cover;
     }
-
+    
+    .bienvenue .txt {
+        margin: 0 20px;
+    }
+    
+    .bienvenue .txt span {
+        color: #4f2658;
+        font-size: 30px;
+        font-weight: 800;
+    }
+    
+    .bienvenue .txt h2 {
+        font-size: 3em;
+    }
+    
+    .bienvenue .txt p {
+        font-size: 12px;
+        padding: 10px 0;
+        color: rgb(109, 109, 109);
+    
+    }
     .trace {
         background: url(../image/Sem\ Título-1.png);
         text-align: left;
