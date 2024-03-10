@@ -161,9 +161,6 @@ p {
 
 
 
-
-.btn {}
-
 .btn a {
     background: #53285C;
     color: white;
@@ -1661,23 +1658,30 @@ a:hover {
         max-width: 100%;
         padding: 20px 0;
     }
-
+    .facult {
+        display: flex;
+        justify-content: flex-start;
+    }
     .fac {
         display: flex;
         justify-content: center;
-        position: relative;
+        align-items: center;
+        flex-direction: column;
+        position: none;
         background: #53285C;
+        border-bottom: 2px solid #4f2658ca;
         border-radius: 0;
-        padding: 15px 10px;
+
         bottom: 0px;
+        width: 100%;
         max-width: 100%;
     }
 
     .fac .fac-icon {
         display: flex;
         align-items: center;
-        width: 33.333%;
-        padding: 0 0px;
+        width: 100%;
+        padding: 10px 0px;
     }
 
     .fac-icon a {
@@ -1697,7 +1701,7 @@ a:hover {
 
     .Competences h3 {
         padding: 10px;
-        font-size: 12px;
+        font-size: 20px;
         color: white;
         margin: 0;
 
@@ -1908,7 +1912,7 @@ a:hover {
 
 
     .btn_pr .btn a {
-        padding: 12px;
+        padding: 10px;
         background: white;
         color: #53285C;
         font-weight: 700;
