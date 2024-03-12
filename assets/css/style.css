@@ -906,8 +906,6 @@ footer .btn {
 .walpperabout {
     display: flex;
     overflow: hidden;
-
-
 }
 
 .image_pzz img {
@@ -930,6 +928,8 @@ footer .btn {
 
 .image_illu img {
     width: 100%;
+    height: 400px;
+    object-fit: cover;
 }
 
 /* * */
@@ -1139,7 +1139,6 @@ h4 {
 .btnpri:hover {
     color: #000000;
     background: rgba(0, 0, 0, 0.066);
-
 }
 
 .owl-dots {
@@ -1165,7 +1164,6 @@ h4 {
     background-color: #69728c;
     outline: 0;
 }
-
 
 .printcontent {
     border-radius: 3px;
@@ -1205,8 +1203,6 @@ h4 {
     transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 
-.printcontent input {}
-
 .dropify-wrapper {
     display: block;
     position: relative;
@@ -1226,8 +1222,6 @@ h4 {
     -webkit-transition: border-color .15s linear;
     transition: border-color .15s linear;
 }
-
-
 
 .card {
     border: 1px solid rgba(0, 0, 0, 0.21);
@@ -1291,9 +1285,7 @@ h4 {
 }
 
 
-.light {
-    background: #f3f5f7;
-}
+
 
 a,
 a:hover {
@@ -1428,136 +1420,6 @@ a:hover {
 
 
 
-@media screen and (min-width: 769px) {
-    .postcard {
-        flex-wrap: inherit;
-
-        .postcard__title {
-            font-size: 2rem;
-        }
-
-        .postcard__tagbox {
-            justify-content: start;
-        }
-
-        .postcard__img {
-            max-width: 300px;
-            max-height: 100%;
-            transition: transform 0.3s ease;
-        }
-
-        .postcard__text {
-            padding: 3rem;
-            width: 100%;
-        }
-
-        .media.postcard__text:before {
-            content: "";
-            position: absolute;
-            display: block;
-            background: #18151f;
-            top: -20%;
-            height: 130%;
-            width: 55px;
-        }
-
-        &:hover .postcard__img {
-            transform: scale(1.1);
-        }
-
-        &:nth-child(2n+1) {
-            flex-direction: row;
-        }
-
-        &:nth-child(2n+0) {
-            flex-direction: row-reverse;
-        }
-
-        &:nth-child(2n+1) .postcard__text::before {
-            left: -12px !important;
-            transform: rotate(4deg);
-        }
-
-        &:nth-child(2n+0) .postcard__text::before {
-            right: -12px !important;
-            transform: rotate(-4deg);
-        }
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .postcard__text {
-        padding: 2rem 3.5rem;
-    }
-
-    .postcard__text:before {
-        content: "";
-        position: absolute;
-        display: block;
-
-        top: -20%;
-        height: 130%;
-        width: 55px;
-    }
-
-    .postcard.dark {
-        .postcard__text:before {
-            background: #18151f;
-        }
-    }
-
-    .postcard.light {
-        .postcard__text:before {
-            background: #e1e5ea;
-        }
-    }
-}
-
-
-
-
-@media screen and (min-width: 769px) {
-    .green::before {
-        background-image: linear-gradient(-80deg,
-                transparent 50%);
-    }
-
-    .green:nth-child(2n)::before {
-        background-image: linear-gradient(80deg,
-
-                transparent 50%);
-    }
-
-    .blue::before {
-        background-image: linear-gradient(-80deg,
-                transparent 50%);
-    }
-
-    .blue:nth-child(2n)::before {
-        background-image: linear-gradient(80deg, $main-blue-rgb-015, transparent 50%);
-    }
-
-    .red::before {
-        background-image: linear-gradient(-80deg, $main-red-rgb-015, transparent 50%);
-    }
-
-    .red:nth-child(2n)::before {
-        background-image: linear-gradient(80deg, $main-red-rgb-015, transparent 50%);
-    }
-
-    .yellow::before {
-        background-image: linear-gradient(-80deg,
-                $main-yellow-rgb-015,
-                transparent 50%);
-    }
-
-    .yellow:nth-child(2n)::before {
-        background-image: linear-gradient(80deg,
-                $main-yellow-rgb-015,
-                transparent 50%);
-    }
-}
-
 @media (max-width:480px) {
     .navsk {
         display: flex;
@@ -1658,10 +1520,12 @@ a:hover {
         max-width: 100%;
         padding: 20px 0;
     }
+
     .facult {
         display: flex;
         justify-content: flex-start;
     }
+
     .fac {
         display: flex;
         justify-content: center;
@@ -1888,6 +1752,10 @@ a:hover {
         margin: 20px 0;
     }
 
+    .rejoins_txt {
+        margin: 0px;
+    }
+
     .rejoins_txt h3 {
         font-size: 2em;
 
@@ -1896,6 +1764,10 @@ a:hover {
     .prin_btn {
         display: flex;
         margin: 20px 0;
+    }
+
+    .btn {
+        --bs-btn-padding-x: 0.20rem;
     }
 
     .counter {
@@ -1938,18 +1810,18 @@ a:hover {
         background: #53285C;
         color: white;
     }
-    
+
     .cons_title {
         padding: 20px 50px;
     }
-    
+
     .consigne .cons {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-    
+
     }
-    
+
     .cons_ittem {
         display: flex;
         padding: 50px;
@@ -1958,16 +1830,17 @@ a:hover {
         background: #4f2658;
         align-items: center;
     }
-    
+
     .cons_ittem .sepa {
         padding: 10px;
         margin: 0 10px;
         border-right: rgba(255, 255, 255, 0.265) solid 2px;
     }
-    
+
     .cons_ittem .sepa h4 {
         font-size: 50px;
     }
+
     .info_adm {
         display: flex;
         flex-direction: column;
@@ -2071,5 +1944,130 @@ a:hover {
 
     .nav-btn {
         display: none;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .postcard {
+        flex-wrap: inherit;
+
+        .postcard__title {
+            font-size: 2rem;
+        }
+
+        .postcard__tagbox {
+            justify-content: start;
+        }
+
+        .postcard__img {
+            max-width: 300px;
+            max-height: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        .postcard__text {
+            padding: 3rem;
+            width: 100%;
+        }
+
+        .media.postcard__text:before {
+            content: "";
+            position: absolute;
+            display: block;
+            background: #18151f;
+            top: -20%;
+            height: 130%;
+            width: 55px;
+        }
+
+        &:hover .postcard__img {
+            transform: scale(1.1);
+        }
+
+        &:nth-child(2n+1) {
+            flex-direction: row;
+        }
+
+        &:nth-child(2n+0) {
+            flex-direction: row-reverse;
+        }
+
+        &:nth-child(2n+1) .postcard__text::before {
+            left: -12px !important;
+            transform: rotate(4deg);
+        }
+
+        &:nth-child(2n+0) .postcard__text::before {
+            right: -12px !important;
+            transform: rotate(-4deg);
+        }
+    }
+
+    .green::before {
+        background-image: linear-gradient(-80deg,
+                transparent 50%);
+    }
+
+    .green:nth-child(2n)::before {
+        background-image: linear-gradient(80deg,
+
+                transparent 50%);
+    }
+
+    .blue::before {
+        background-image: linear-gradient(-80deg,
+                transparent 50%);
+    }
+
+    .blue:nth-child(2n)::before {
+        background-image: linear-gradient(80deg, $main-blue-rgb-015, transparent 50%);
+    }
+
+    .red::before {
+        background-image: linear-gradient(-80deg, $main-red-rgb-015, transparent 50%);
+    }
+
+    .red:nth-child(2n)::before {
+        background-image: linear-gradient(80deg, $main-red-rgb-015, transparent 50%);
+    }
+
+    .yellow::before {
+        background-image: linear-gradient(-80deg,
+                $main-yellow-rgb-015,
+                transparent 50%);
+    }
+
+    .yellow:nth-child(2n)::before {
+        background-image: linear-gradient(80deg,
+                $main-yellow-rgb-015,
+                transparent 50%);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .postcard__text {
+        padding: 2rem 3.5rem;
+    }
+
+    .postcard__text:before {
+        content: "";
+        position: absolute;
+        display: block;
+
+        top: -20%;
+        height: 130%;
+        width: 55px;
+    }
+
+    .postcard.dark {
+        .postcard__text:before {
+            background: #18151f;
+        }
+    }
+
+    .postcard.light {
+        .postcard__text:before {
+            background: #e1e5ea;
+        }
     }
 }
